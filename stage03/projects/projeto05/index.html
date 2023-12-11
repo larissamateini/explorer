@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscrição</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+      <h1>
+        Crie e compartilhe seu evento.
+      </h1>
+      <p>
+        O primeiro passo é preencher esse formulário de inscrição.
+      </p>
+  </header>
+
+  <div class="wrapper">
+    <form action="" method="get">
+      <div class="fieldsetwrapper">
+
+        <fieldset>
+          <legend>Informações do Evento</legend>
+          <label for="itituloevento">
+            Título do evento
+            <span>(mínimo 8 caracteres)</span>
+          </label>
+          <input type="text" name="tituloevento" id="itituloevento" minlength="8" required>
+          <label for="ilinkevento">
+            Link do evento
+            <span>(comece com https://)</span>
+          </label>
+          <input type="url" name="linkevento" id="ilinkevento" required>
+          <label for="icontato">
+            Whatsapp para contato
+            <span>(somente números)</span>
+          </label>
+          <input type="tel" name="contato" id="icontato">
+          <label for="iextras">
+            Informações extras
+          </label>
+          <textarea name="extras" id="iextras"></textarea>
+          <label for="icategoria">
+            Categoria
+          </label>
+          <select name="categoria" id="icategoria">
+            <option value="Tipo do evento" selected></option>
+            <option>Acadêmico</option>
+            <option>Educacional</option>
+            <option>Entretenimento</option>
+            <option>Social</option>
+            <option>Cultural</option>
+            <option>Esportivo</option>
+            <option>Corporativo</option>
+            <option>Religioso</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Privacidade</legend>
+          <label for="iemail">
+            E-mail do administrador
+            <span>(digite um email válido)</span>
+          </label>
+          <input type="email" name="email" id="iemail" required>
+          <label for="isenha">
+            Senha de acesso para os participantes
+            <span>(mínimo 8 caracteres)</span>
+          </label>
+          <input type="password" name="senha" id="isenha" minlength="8" required>
+          <div id="privado">
+            <input type="checkbox" name="privado" id="iprivado" checked required>
+            <label for="iprivado">
+              Evento privado
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset id="dh">
+          <legend>Dia e hora</legend>
+
+          
+          <div id="datahora">
+
+            <div id="data">
+              <label for="idata">
+                Data
+              </label>
+              <input type="date" name="data" id="idata" required>
+            </div>
+            
+            <div id="idas">
+              <label for="das">
+                Das
+              </label>
+              <input type="time" name="das" id="idas" required>
+            </div>
+
+            <div id="ate">
+              <label for="iate">
+                Até
+              </label>
+              <input type="time" name="ate" id="iate" required>
+            </div>
+            
+          </div>
+        </fieldset>
+      </div>
+      
+      <div class="salvar">
+        <input type="submit" name="salvar" id="isalvar" value="Salvar evento">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
