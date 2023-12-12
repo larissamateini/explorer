@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 992px) {
+  main {
+    max-width: 108.4rem;
+    height: 37.6rem;
+    display: flex;
+    gap: 11.6rem;
+    
+    margin: 8.0rem;
+  }
+
+  .container1, .container2 {
+    max-width: 48.4rem;
+  }
+
+  .container2 {
+    align-self: flex-end;
+  }
+
+  .container2 ul {
+    gap: 3.2rem;
+    margin-bottom: 0;
+  }
+
+  .container2 ul li {
+    max-width: 45rem;
+    align-items: center;
+    gap: 5.3rem;
+  }
+
+  ul > li:nth-child(1) {
+    gap: 6.6rem;
+  }
+
+  h2 {
+    margin: 1.7rem 0 3.1rem;
+  }
+
+  p {
+    margin-bottom: 2.8rem;
+  }
+
+}
