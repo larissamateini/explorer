@@ -44,6 +44,6 @@
 <h3>Desafios</h3>
 <ul>
   <li>
-    <a href="https://larissamateini.github.io/explorer/stage03/stage03/challenges/challenge01">Desafio 01</a>
+    <a href="https://larissamateini.github.io/explorer/stage03/challenges/challenge01">Desafio 01</a>
   </li>
 </ul>
