@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --cor01: #FFF;
+  --cor02: #A54328;
+}
+
+body {
+  color: var(--cor02);
+  font-family: 'Source Serif Pro', serif;
+  font-size: clamp(1.4rem, 1vw + 0.4rem, 2rem);
+  font-weight: 400;
+  line-height: clamp(1.8rem, 1vw + 1rem, 2.5rem);
+
+  background: var(--cor01);
+}
+
+main {
+  max-width: 39.3rem;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+
+  margin-inline: auto;
+  padding: 5.4rem 3.7rem;
+}
+
+.cheesecake {
+  max-width: 30.8rem;
+}
+
+.cheesecake, .recipe {
+  display: flex;
+  flex-direction: column;
+  gap: 3.4rem;
+}
+
+.cheesecake img {
+  width: 100%;
+}
+
+h1, h2 {
+  font-size: clamp(2.8rem, 2vw + 1rem, 4rem);
+  font-weight: 700;
+  line-height: clamp(3.6rem, 2vw + 1rem, 5rem);
+}
+
+h3 {
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+ol, ul {
+  list-style-position: inside;
+}
+
+li {
+  padding-left: 1rem;
+}
+
+button {
+  max-width: 9.4rem;
+  max-height: 3.2rem;
+  background: var(--cor02);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--cor01);
+  font-family: 'Source Serif Pro', serif;
+  font-size: 1.0rem;
+  font-weight: 500;
+  line-height: 1.7rem;
+  text-transform: capitalize;
+
+  padding: 1.1rem;
+
+  border: 1px solid var(--cor02);
+  border-radius: 6px;
+}
+
+button:hover {
+  color: var(--cor02);
+  background-color: rgba(255, 255, 255, 0.043);
+  border: 2px solid var(--cor02);
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    background: url(images/img-background.png) fixed;
+  }
+
+  main {
+    max-width: fit-content;
+    flex-direction: row;
+    gap: 14rem;
+  
+    padding: 9.5rem 14rem;
+  }
+
+  .cheesecake {
+    max-width: 43.5rem;
+    gap: 6.5rem;
+  }
+
+  .cheesecake img {
+    max-width: 41.1rem;
+    max-height: 22.4rem;
+  }
+
+  .recipe {
+    max-width: 52.5rem;
+    gap: 3rem;
+  }
+
+  button {
+    max-width: 13.3rem;
+    max-height: 4.5rem;
+    gap: 1rem;
+  
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+  
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+  }
+}
