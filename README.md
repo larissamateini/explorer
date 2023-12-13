@@ -42,6 +42,9 @@
   <li>
     <a href="https://larissamateini.github.io/explorer/stage03/projects/project06" target="_blank">Projeto 02</a>
   </li>
+  <li>
+    <a href="https://larissamateini.github.io/explorer/stage03/projects/project07" target="_blank">Projeto 02</a>
+  </li>
 </ul>
 
 <h3>Desafios</h3>
