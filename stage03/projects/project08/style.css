@@ -1,0 +1,99 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@600;900&display=swap');
+
+
+:root {
+  font-size: 62.5%;
+  
+  --cor01: #121214;
+  --cor02: #02799D;
+  --cor03: #E1E1E6;
+  --cor04: #C4C4CC;
+  --cor05: #202024;
+  --cor06: #323238;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Mulish', sans-serif;
+}
+
+body {
+  background-color: var(--cor01);
+}
+
+body p {
+  font-weight: 600;
+}
+
+header {
+  max-width: 121rem;
+  display: flex;
+  flex-direction: column;
+
+
+  line-height: normal;
+  margin: 7.3rem auto 0rem;
+}
+
+header h1 {
+  color: var(--cor02);
+  font-size: 5.8rem;
+
+  margin-bottom: 8px;
+}
+
+header h1, .card h2 {
+  font-weight: 900;
+}
+
+header p {
+  font-size: 3.2rem;
+}
+
+header p, main h2 {
+  color: var(--cor03);
+}
+
+main {
+  max-width: 121rem;
+
+  display: grid;
+  grid-template-columns: repeat(3, 370px);
+  column-gap: 4.4rem;
+  row-gap: 6.0rem;
+
+  justify-content: center;
+  justify-items: ;
+  
+  line-height: normal;
+  margin: 6.2rem auto 14.4rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+
+  background: var(--cor05);
+  padding: 0rem 3.2rem 3.2rem;
+
+  border-radius: 8px;
+  border: 2px solid var(--cor06);
+  overflow: hidden;
+}
+
+.card h2 {
+  font-size: 3.5rem;
+  margin: 2.4rem 0;
+}
+
+.card p {
+  color: var(--cor04);
+  font-size: 1.9rem;
+}
+
