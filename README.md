@@ -62,3 +62,14 @@
     <a href="https://larissamateini.github.io/explorer/stage03/challenges/challenge02">Desafio 02</a>
   </li>
 </ul>
+
+<h2>STAGE 04</h2>
+<h3>Desafios</h3>
+<ul>
+  <li>
+    <a href="https://larissamateini.github.io/explorer/stage04/challenges/challenge01">Desafio 01</a>
+  </li>
+  <li>
+    <a href="https://larissamateini.github.io/explorer/stage04/challenges/challenge02">Desafio 02</a>
+  </li>
+</ul>
