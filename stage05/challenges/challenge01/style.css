@@ -1,0 +1,316 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@600;700;900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --color01: #FFFFFF;
+  --color02: #F9F4FB;
+  --color03: #312D64;
+  --color04: #B52184;
+  --color05: #343193;
+  --color06: #302C63;
+
+  font-size: 62,5%;
+}
+
+body {
+  background-color: var(--color02);
+  font-family: 'Mulish', sans-serif;
+}
+
+#page {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 0 auto 9rem;
+}
+
+header img.astro {
+  max-width: 24rem;
+  animation: astronaut .5s ease-in-out;
+}
+
+img.astro:hover {
+  filter: brightness(105%) contrast(105%) saturate(105%) drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.371));
+
+  transform: scale(1.1);
+  transition-duration: .4s;
+  transition-delay: .1s;
+  transition-timing-function: ease-in-out;
+}
+
+div.header-text {
+  max-width: 24rem;
+  display: flex;
+  flex-direction: column;
+}
+
+header h1 {
+  color: var(--color04);
+  font-size: 2.5rem;
+  font-weight: 900;
+
+  margin: 1.7rem 0 0.5rem;
+}
+
+header p {
+  color: var(--color03);
+  font-size: 1.6rem;
+  font-weight: 600;
+
+  margin-bottom: 3.6rem;
+}
+
+header img.arrow {
+  width: 6rem;
+  align-self: center;
+}
+
+img.arrow:hover {
+  transform: scale(1.1);
+  animation: down 1s;
+}
+
+main {
+  max-width: 100%;
+}
+
+#content, footer {
+  background: linear-gradient(96deg, var(--color05) 0%, var(--color06) 99.68%);
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  gap: 4.9rem;
+
+  padding: 5.9rem 0;
+}
+
+#content div {
+  max-width: 24rem;
+  background-color: var(--color01);
+
+  margin: 0 auto;
+  padding: 2.6rem;
+  border-radius: 1.8rem;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.403);
+}
+
+#content div:hover {
+  transform: scale(1.1);
+  transition-duration: .3s;
+  transition-timing-function: ease-out;
+}
+
+#content img {
+  animation: planet .8s ease-in-out;
+  animation-fill-mode: backwards;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#content img:hover {
+  transform: scale(1.2);
+}
+
+#content h2 {
+  color: var(--color04);
+  font-size: 2.2rem;
+  font-weight: 900;
+
+  margin: 3.2rem 0 1.8rem;
+}
+
+#content p {
+  color: #312D64;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+form {
+  padding: 7.8rem 0 6.4rem;
+}
+
+fieldset {
+  max-width: 24rem;
+  display: flex;
+  flex-direction: column;
+
+  border: none;
+  margin: auto;
+}
+
+fieldset legend {
+  color: var(--color04);
+  font-size: 2.2rem;
+  font-weight: 900;
+
+  margin-bottom: 4.3rem;
+}
+
+fieldset div.input {
+  display: flex;
+  align-items: flex-end;
+  background-color: var(--color01);
+}
+
+fieldset div.input,
+fieldset textarea {
+  margin-bottom: 2.4rem;
+  padding: 1.2rem;
+
+  border-radius: 1.6rem;
+  border: 1.5px solid var(--color03);
+}
+
+div.input input {
+  width: 85%;
+  margin-left: 1.2rem;
+  border: none;
+}
+
+div.input:hover,
+textarea:hover {
+  border: 2px solid var(--color03);
+}
+
+fieldset input,
+fieldset textarea {
+  font-family: 'Mulish', sans-serif;
+  color: var(--color03);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+fieldset input.submit {
+  width: 15rem;
+
+  color: var(--color01);
+  font-size: 1.4rem;
+  font-weight: 700;
+
+  background: linear-gradient(96deg, var(--color05) 0%, var(--color06) 99.68%);
+  padding: 1.6rem;
+  border-radius: 1.6rem;
+}
+
+.submit:hover{
+  color: var(--color02);
+  background: var(--color04);
+  
+  border: var(--color02);
+  box-shadow: 1px 1px 3px var(--color04);
+
+  transform: scale(1.1);
+  transition: .3s ease-in-out;
+}
+
+footer {
+  text-align: center;
+  padding: 1.6rem;
+}
+
+footer p {
+  color: var(--color01);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+@keyframes planet {
+  to {
+    margin-top: 0%;
+    margin-left: 80%;
+  }
+}
+
+@keyframes astronaut {
+  from {
+    transform: scale(0.3);
+    margin-top: -100%;
+  }
+
+  to {
+    margin-top: 0%;
+  }
+}
+
+@keyframes down {
+  to {
+    margin-top: 10%;
+  }
+}
+
+@media (min-width: 500px) {
+  div.header-text,
+  #content div,
+  fieldset {
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 1400px) {
+  header {
+    max-width: 100%;
+    flex-direction: row-reverse;
+    justify-content: center;
+
+    margin: 0 3rem 10rem 0;
+  }
+
+  header img.astro {
+    max-width: 100%;
+  }
+
+  header img.arrow {
+    width: 5rem;
+    align-self: flex-start;
+  }
+
+  div.header-text {
+    align-self: flex-end;
+    justify-self: flex-start;
+  }
+
+  div.header-text h1 {
+    font-size: 3.2rem;
+    margin: 0 0 0.5rem;
+  }
+
+  div.header-text p {
+    font-size: 2rem;
+    margin-bottom: 12rem;
+  }
+
+  #content {
+    flex-direction: row;
+    gap: 6rem;
+
+    padding: 6.4rem 4rem;
+    margin: auto;
+  }
+
+  #contact {
+    background: url(assets/image-desktop.png) no-repeat right bottom;
+    background-size: contain;
+  }
+
+  #contact fieldset {
+    margin: 0 4rem 0;
+  }
+
+  fieldset legend {
+    margin-bottom: 3rem;
+  }
+}
