@@ -80,3 +80,7 @@
   <li>
     <a href="https://larissamateini.github.io/explorer/stage05/challenges/challenge01">Desafio 01</a>
   </li>
+  <li>
+    <a href="https://larissamateini.github.io/explorer/stage05/challenges/challenge02">Desafio 02</a>
+  </li>
+</ul>
