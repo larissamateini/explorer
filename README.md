@@ -75,6 +75,13 @@
 </ul>
 
 <h2>STAGE 05</h2>
+<h3>Projetos</h3>
+<ul>
+   <li>
+    <a href="https://larissamateini.github.io/explorer/stage05/projects/project10/">Projeto 01</a>
+  </li>
+</ul>
+
 <h3>Desafios</h3>
 <ul>
   <li>
