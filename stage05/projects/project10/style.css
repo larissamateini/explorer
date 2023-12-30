@@ -1,0 +1,112 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Montserrat:wght@600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color01: #FFFFFF;
+  --color02: #7879F1;
+  --color03: #34355B;
+  --color04: #34355BCC;
+  --color05: #DCE2E9;
+  --color-linear-gradient01: #C2E9FB;
+  --color-linear-gradient02: #A1C4FD;
+
+  font-size: 62,5%;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.6rem;
+  background: linear-gradient(288deg, var(--color-linear-gradient01) 0%, var(--color-linear-gradient02) 100%);
+}
+
+main {
+  width: min(42.8rem, 90%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+  background: var(--color01);
+  margin: auto;
+  padding: 4.8rem 6.4rem 6.4rem;
+
+  border-radius: .6rem;
+  box-shadow: 0 .2rem .4rem rgba(0, 0, 0, 0.10);
+}
+
+.hide {
+  display: none;
+}
+
+h1 {
+  color: var(--color03);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+}
+
+p {
+  color: var(--color04);
+  font-weight: 400;
+  line-height: 150%;
+
+  margin-bottom: 4.8rem;
+}
+
+form {
+  display: inline-flex;
+  justify-content: center;
+}
+
+#inputNumber,
+button {
+  padding: 1.6rem;
+  font-size: 1.6rem;
+  border: none;
+}
+
+#inputNumber {
+  width: 100px;
+
+  color: var(--color03);
+  font-weight: 400;
+  background: var(--color05);
+
+  border-radius: .4rem 0 0 .4rem;
+}
+
+button {
+  color: var(--color01);
+  font-weight: 700;
+
+  background: var(--color02);
+  border-radius: 0 .4rem .4rem 0;
+
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.screen2 h2 {
+  font-size: 2.4rem;
+  font-weight: 400;
+
+  margin-bottom: 3.2rem;
+}
+
+.screen2 button {
+  max-width: max-content;
+  border-radius: .4rem;
+}
