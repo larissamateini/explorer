@@ -1,0 +1,146 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Dancing+Script&family=Montserrat:wght@700&display=swap');
+
+:root {
+  font-size: 62.5%;
+
+  --color01: #FFFFFF;
+  --color02: #000000;
+  --color03: #34355B;
+  --color04: #190361;
+  --color05: #BB00FF;
+  --color06: #FF9500;
+  --color07: #E4EDF1;
+
+  --fontDMSans:'DM Sans', sans-serif;
+  --fontMontserrat: 'Montserrat', sans-serif;
+  --fontDancing: 'Dancing Script', cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  background: linear-gradient(45deg, var(--color04) 0%, var(--color05) 100%);
+}
+
+main {
+  width: min(42.8rem, 95%);
+}
+
+.screenOne,
+.screenTwo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  text-align: center;
+  padding: 4.8rem 6.4rem 6.4rem;
+  background: var(--color01);
+  border-radius: .5rem;
+  box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.8);
+}
+
+.screenOne h1, 
+.screenOne p,
+.screenTwo h2 {
+  color: var(--color03);
+}
+
+.screenOne h1,
+.screenTwo h2 {
+  font-family: var(--fontMontserrat);
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.screenOne p {
+  font-family: var(--fontDMSans);
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+#closedBiscuit:hover {
+  animation: shake .2s infinite;
+  cursor: pointer;
+}
+
+.containerImage {
+  width: 30rem;
+  height: 20rem;
+}
+
+.screenTwo {
+  padding: 4.8rem 6.4rem;
+}
+
+.message {
+  padding: 1rem;
+  background: var(--color07);
+  box-shadow: .2rem .2rem .2rem 0 rgba(85, 85, 85, 0.50);
+  margin-bottom: 6rem;
+  animation: appear 2s;
+}
+
+.message p {
+  color: #000;
+  font-family: Dancing Script;
+  font-size: 24px;
+  font-weight: 400;
+
+}
+
+.screenTwo button {
+  color: var(--color01);
+  font-family: var(--fontDMSans);
+  font-size: 1.6rem;
+  font-weight: 700;
+  
+  padding: 1.6rem;
+  background: var(--color06);
+  border: none;
+  border-radius: .4rem;
+}
+
+.screenTwo button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes shake {
+  25% {
+    margin-left: -2%;
+    rotate: 1deg;
+  }
+  50% {
+    margin-left: 2%;
+  }
+}
+
+@keyframes appear {
+  0% {
+    scale: 0.0;
+    margin-bottom: -45%;
+  }
+
+  100% {
+    margin-bottom: 20%;
+  }
+}
