@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Temporizador estilo pomodoro">
+  <title>FocusTimer 2.0</title>
+
+  <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script type="module" src="scripts/main.js" defer></script>
+</head>
+<body>
+  <main>
+    <div id="timer">
+      <div id="countdown">
+        <span id="minutes">00</span>
+        <span>:</span>
+        <span id="seconds">00</span>
+      </div>
+      <div id="controls">
+        <button 
+        class="ph ph-play-circle"></button>
+        <button 
+        class="ph ph-stop-circle"></button>
+        <button 
+        class="ph ph-plus-circle"></button>
+        <button 
+        class="ph ph-minus-circle"></button>
+      </div>
+    </div>
+    <div id="sounds">
+      <button 
+      class="ph ph-tree sound"></button>
+
+      <button 
+      class="ph ph-cloud-rain sound"></button>
+
+      <button 
+      class="ph ph-storefront sound"></button>
+
+      <button 
+      class="ph ph-campfire sound"></button>
+    </div>
+  </main>
+</body>
+</html>
