@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Temporizador estilo pomodoro">
+  <title>FocusTimer</title>
+  <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-svg">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script type="module" src="scripts/main.js" defer></script>
+</head>
+<body>
+  <div id="mode">
+    <img class="darkMode" src="assets/moon.svg" alt="Ligar dark mode">
+    <img class="lightMode" src="assets/sun.svg" alt="Ligar light mode">
+  </div>
+  
+  <main>
+    <div id="timer">
+      <span id="minutes">00</span>
+      <span>:</span>
+      <span id="seconds">00</span>
+    </div>
+    <div id="controls">
+      <img 
+      class="play"
+      data-action="toggleRunning" 
+      src="assets/play.svg" 
+      alt="Iniciar contador">
+    
+      <img 
+      data-action="toggleRunning" 
+      class="pause" 
+      src="assets/pause.svg" 
+      alt="Pausar contador">
+    
+      <img 
+      data-action="set" 
+      class="changeTimer" 
+      src="assets/timer.svg" 
+      alt="Ajustar contagem">
+    
+      <img 
+      data-action="reset"
+      class="stopTimer" 
+      src="assets/stop.svg" 
+      alt="Parar contador">
+    
+      <img 
+      data-action="toggleMusic"
+      class="speakerOff" 
+      src="assets/speaker-mute.svg" 
+      alt="Desligar som">
+
+      <img 
+      data-action="toggleMusic"
+      class="speakerOn" 
+      src="assets/speaker.svg" 
+      alt="Ligar som">
+    </div>
+  </main>
+</body>
+</html>
