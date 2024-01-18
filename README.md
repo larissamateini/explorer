@@ -80,6 +80,12 @@
    <li>
     <a href="https://larissamateini.github.io/explorer/stage05/projects/project10/">Projeto 01</a>
   </li>
+  <li>
+    <a href="https://larissamateini.github.io/explorer/stage05/projects/project11/">Projeto 02</a>
+  </li>
+  <li>
+    <a href="https://larissamateini.github.io/explorer/stage05/projects/project12/">Projeto 03</a>
+  </li>
 </ul>
 
 <h3>Desafios</h3>
@@ -89,5 +95,11 @@
   </li>
   <li>
     <a href="https://larissamateini.github.io/explorer/stage05/challenges/challenge02">Desafio 02</a>
+  </li>
+  <li>
+    <a href="https://larissamateini.github.io/explorer/stage05/challenges/challenge03">Desafio 03</a>
+  </li>
+  <li>
+    <a href="https://larissamateini.github.io/explorer/stage05/challenges/challenge04">Desafio 04</a>
   </li>
 </ul>
