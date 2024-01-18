@@ -103,3 +103,18 @@
     <a href="https://larissamateini.github.io/explorer/stage05/challenges/challenge04">Desafio 04</a>
   </li>
 </ul>
+
+<h2>STAGE 06</h2>
+<h3>Projetos</h3>
+<ul>
+   <li>
+    <a href="https://larissamateini.github.io/explorer/stage06/projects/project013/">Projeto 01</a>
+  </li>
+</ul>
+
+<h3>Desafios</h3>
+<ul>
+  <li>
+    <a href="https://larissamateini.github.io/explorer/stage06/challenges/challenge01">Desafio 01</a>
+  </li>
+</ul>
