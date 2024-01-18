@@ -108,13 +108,13 @@
 <h3>Projetos</h3>
 <ul>
    <li>
-    <a href="https://larissamateini.github.io/explorer/stage06/projects/project013/">Projeto 01</a>
+    <a href="https://explorer-stage06spa.vercel.app/">Projeto 01</a>
   </li>
 </ul>
 
 <h3>Desafios</h3>
 <ul>
   <li>
-    <a href="https://larissamateini.github.io/explorer/stage06/challenges/challenge01">Desafio 01</a>
+    <a href="https://explorer-stage06-challenge01.vercel.app/">Desafio 01</a>
   </li>
 </ul>
