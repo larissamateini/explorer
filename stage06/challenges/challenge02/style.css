@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --font-color-placeholder: #7C7C8A;
+  --font-color-table: #E1E1E6;
+  --font-color-action: #F75A68;
+  --font-color-emptystate: #4E5455;
+  --bg-color-theader: #092D38;
+  --bg-color-header-btn: #065E7C;
+  --bg-color-tr01-input: #06181C;
+  --bg-color-tr-02: #06161B80;
+  --border-color-table: #4A808C;
+}
+
+body {
+  font-size: 1.6rem;
+  font-weight: 400;
+  background: black;
+}
+
+body * {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+#app {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+header {
+  height: 4.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 8rem 0;
+}
+
+.search {
+  display: flex;
+  gap: .8rem;
+}
+
+.search input {
+  min-width: 24rem;
+
+  color: white;
+  font-size: 1.6rem;
+  padding: 1.6rem;
+
+  background: var(--bg-color-tr01-input);
+  border-radius: .5rem;
+  border: none;
+}
+
+.search input::placeholder {
+  color: var(--font-color-placeholder);
+  font-size: 1.6rem;
+}
+
+.search button {
+  display: flex;
+  place-items: center;
+  gap: 1rem;
+
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  
+  padding: 1.2rem 3.2rem;
+  background-color: var(--bg-color-header-btn);
+  border: none;
+  border-radius: .5rem;
+
+  cursor: pointer;
+}
+
+.search button span:first-child {
+  font-size: 2rem;
+}
+
+.search button span {
+  font-size: 1.4rem;
+}
+
+.search button:hover {
+  color: var(--bg-color-header-btn);
+  background: white;
+  transition: .3s ease-out;
+}
+
+.border {
+  width: fit-content;
+  border: 1px solid var(--border-color-table);
+  border-radius: 1.2rem;
+}
+
+table {
+  width: 80rem;
+  color: var(--font-color-table);
+  text-align: left;
+
+  border-radius: 1.2rem;
+  overflow: hidden;
+  border-collapse: collapse;
+}
+
+thead {
+  background: var(--bg-color-theader);
+}
+
+thead th {
+  padding: 1.6rem 2.4rem 1.6rem 4rem;
+}
+
+tbody tr:nth-child(odd) {
+  background: var(--bg-color-tr01-input);
+}
+
+tbody tr:nth-child(even) {
+  background: var(--bg-color-tr-02);
+  border-top: 1px solid var(--border-color-table);
+}
+
+tr td {
+  padding: 2.4rem 2.4rem 2.4rem 4rem;
+}
+
+tr .user {
+  display: flex;
+  place-items: center;
+  gap: 1.6rem;
+}
+
+.user img {
+  width: 5.6rem;
+  height: 5.6rem;
+
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user a {
+  color: var(--font-color-table);
+  text-decoration: none;
+}
+
+.user a p {
+  font-weight: 700;
+  margin-bottom: .8rem;
+}
+
+tr .remove {
+  color: var(--font-color-action);
+  font-weight: 700;
+
+  background: none;
+  border: none;
+  cursor: pointer;
+}
