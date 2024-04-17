@@ -109,6 +109,7 @@
 <ul>
    <li>
     <a href="https://explorer-stage06spa.vercel.app/">Projeto 01</a>
+    <a href="https://larissamateini.github.io/explorer/stage06/projects/project14/">Projeto 02</a>
   </li>
 </ul>
 
