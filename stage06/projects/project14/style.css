@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --primary-font: 'Poppins', sans-serif;
+
+  --text-color: #303030;
+  --hue: 194;
+  --primary-color: hsl(var(--hue), 100%, 63%)
+}
+
+body {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  background-color: rgb(247, 250, 254);
+}
+
+body * {
+  font-family: var(--primary-font);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+#app {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 2.5rem 0;
+}
+
+header h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search input {
+  height: 3.2rem;
+  padding: 0 .8rem;
+  border: 1px solid #ccc;
+  border-radius: .4rem 0 0 .4rem;
+}
+
+.search button {
+  height: 3.2rem;
+  padding: 0 1rem;
+
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 0 .4rem .4rem 0;
+
+  cursor: pointer;
+}
+
+.search button:hover {
+  filter: brightness(1.1);
+}
+
+table {
+  width: 100%;
+  box-shadow: 0 1rem 2rem -1rem rgba(0, 0, 0, 0.3);
+  border-collapse: collapse;
+}
+
+table * {
+  color: var(--text-color);
+  font-size: 1.4rem;
+}
+
+table th {
+  background: var(--primary-color);
+  font-weight: 400;
+  text-align: left;
+  padding: 1.5rem;
+}
+
+table th:first-child {
+  border-top-left-radius: .4rem;
+}
+
+table th:last-child {
+  border-top-right-radius: .4rem;
+}
+
+table td {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+table tr {
+  background: #eee;
+}
+
+table tr:nth-child(odd) {
+  background: #ddd;
+}
+
+td.user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+td.user img {
+  width: 5rem;
+  height: 5rem;
+  
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+td.user a {
+  text-decoration: none;
+}
+
+td.user a p {
+  font-weight: 600;
+}
+
+td .remove {
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+}
